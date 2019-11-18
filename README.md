@@ -1,28 +1,27 @@
-# Ultimate
+# Riot News
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+Riot News is a SPA for League of Legends related news.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Riot News features the latest League of Legends news.
 
-## Code scaffolding
+## How does Riot News work?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Riot News' main content is a Home view where the user can see the most important news on the header while the rest of the news are displayed when scrolling. 
+When any piece of news is clicked, a specific article view of said piece of news is opened.
 
-## Build
+## Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ninafy was build using the following technologies:
+· HTML
+· CSS
+· Typescript
+· Angular 8 
 
-## Running unit tests
+## WIP
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# riot-news" 
+This SPA is still a WIP, some of the upcoming features include:
+· News search bar.
+· News filter.
+· Links will be fixed.
