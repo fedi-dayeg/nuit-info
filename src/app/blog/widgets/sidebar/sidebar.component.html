@@ -1,0 +1,33 @@
+ <div class="blog-side">
+        <div>
+            <h5 class="blog-title">categories</h5>
+            <div class="sidebar-container borders">
+                <ul class="sidebar-list">
+                    <li class="d-flex"><a href="javascript:void()"> <i class="fa fa-angle-right m-r-15"
+                                                       aria-hidden="true"></i>E-Sports</a></li>
+                    <li class="d-flex"><a href="javascript:void()"> <i class="fa fa-angle-right m-r-15"
+                                                       aria-hidden="true"></i>League of Legends</a></li>
+                    <li class="d-flex"><a href="javascript:void()"> <i class="fa fa-angle-right m-r-15"
+                                                       aria-hidden="true"></i>Teamfight Tactics</a></li>
+                    <li class="d-flex"><a href="javascript:void()"> <i class="fa fa-angle-right m-r-15"
+                                                       aria-hidden="true"></i>Legends of Runeterra</a></li>
+                    <li class="d-flex"><a href="javascript:void()"> <i class="fa fa-angle-right m-r-15"
+                                                       aria-hidden="true"></i>Wild Rift</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h5 class="blog-title">most relevant news</h5>
+            <div class="sidebar-container" *ngFor="let news of mainNews">
+                <div class="post-container d-flex">
+                    <div class="w-75 m-r-25">
+                        <img src="{{news['urlToImage']}}" alt=""
+                             class="img-fluid">
+                        <div class="badge">2020</div>
+                    </div>
+                    <div><h5 class="post-head">{{news['title']}}</h5>
+                        <h6 class="date">{{news['publishedAt']}}</h6>
+                    </div>
+                </div>
+        </div>
+</div>

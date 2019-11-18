@@ -1,0 +1,71 @@
+
+
+<!-- section start -->
+<section class="agency blog blog-sec blog-sidebar sider">
+    <div class="container">
+        <div class="row px-0">
+            <div class="col-lg-9">
+                <div class="row px-0">
+                    <div class="col-12">
+                        <div class="blog-agency">
+                            <div class="blog-contain">
+                                <img src="{{this.singlePiece['urlToImage']}}" alt="" class="img-fluid" routerLink="/news/{{this.singlePiece.id}}">
+                                <div class="img-container center-content">
+                                    <div class="center-content">
+                                        <div class="blog-info">
+                                            <div class="m-b-20">
+                                                <div class="center-text"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>
+                                                    <h6 class="m-r-25 font-blog">{{this.singlePiece["publishedAt"]}}</h6>
+                                                    <!-- 
+                                                    <i class="fa fa-map-marker m-r-10" aria-hidden="true"></i>
+                                                    -->
+                                                </div>
+                                            </div>
+                                            <h5 class="blog-head font-600">{{this.singlePiece["title"]}}</h5>
+                                            <p class="para2">
+                                                {{this.singlePiece["description"]}}
+                                            </p>
+                                            <div class="btn-bottom m-t-20"><a href="javascript:void()" class="text-uppercase" routerLink="/news/{{this.singlePiece.id}}">read more</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"  *ngFor="let news of secondaryNews">
+                        <div class="blog-agency">
+                            <div class="blog-contain">
+                                <img src="{{news['urlToImage']}}" alt="" class="img-fluid" routerLink="/news/{{this.news.id}}">
+                                <div class="img-container center-content">
+                                    <div class="center-content">
+                                        <div class="blog-info">
+                                            <div class="m-b-20">
+                                                <div class="center-text"><i class="fa fa-clock-o m-r-10"
+                                                                            aria-hidden="true"></i>
+                                                    <h6 class="m-r-25 font-blog">{{news["publishedAt"]}}</h6>
+                                                    <!-- 
+                                                    <i class="fa fa-map-marker m-r-10" aria-hidden="true"></i>
+                                                    <h6 class="font-blog">{{blog.type}}</h6> 
+                                                    -->
+                                                </div>
+                                            </div>
+                                            <h5 class="blog-head font-600" routerLink="/news/{{this.news.id}}">{{news["title"]}}</h5>
+                                            <p class="para2">{{news["description"]}}</p>
+                                            <div class="btn-bottom m-t-20"><a href="javascript:void()" class="text-uppercase" routerLink="/news/{{this.news.id}}">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <app-sidebar></app-sidebar>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section end-->
